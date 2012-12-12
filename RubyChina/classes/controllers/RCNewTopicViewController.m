@@ -14,6 +14,8 @@
 
 @interface RCNewTopicViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
 
+@property (nonatomic) NSNumber *selectedNodeID;
+
 @end
 
 @implementation RCNewTopicViewController
@@ -86,6 +88,30 @@
 
 - (void)doneButtonPressed
 {
+    RKClient *client = [[RKObjectManager sharedManager] client];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *token = [defaults objectForKey:@"token"];
+    
+    
+    //    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"WARNNING!" message:@"请设置密钥后重新发送" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    //    [alert show];
+    
+    NSString *title = [_titleTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *body = [_bodyTextView.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+
+    
+    // http://ruby-china.org/api/topics.json
+    [client post:[NSString stringWithFormat: @"/topics.json?token=%@", token]
+            usingBlock:^(RKRequest *request) {
+                
+                NSDictionary *params = [NSDictionary dictionaryWithObjects:@[title, body, _selectedNodeID]
+                                                                   forKeys:@[@"title", @"body", @"node_id"]];
+        
+                [request setParams:params];
+    }];
+    
+    [self dismissModalViewControllerAnimated:YES];
+    
 }
 
 - (void)cancelButtonPressed
@@ -149,5 +175,6 @@
 {
     Node *node = [_nodes objectAtIndex:row];
     [_nodeButton setTitle:node.nodeName forState:UIControlStateNormal];
+    _selectedNodeID = node.nodeID;
 }
 @end

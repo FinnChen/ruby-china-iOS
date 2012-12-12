@@ -78,9 +78,14 @@
     [panGesture requireGestureRecognizerToFail:swipeRight];
     [panGesture requireGestureRecognizerToFail:swipeLeft];
     
+//    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+//    [_rightContentView addGestureRecognizer:tapGesture];
+//    [tapGesture requireGestureRecognizerToFail:panGesture];
+    
     swipeRight.delegate = self;
     swipeLeft.delegate = self;
     panGesture.delegate = self;
+//    tapGesture.delegate = self;
     
 
     // add the default childViewController;
@@ -288,6 +293,7 @@
             [self revealLeftSideView];
         }
     }
+    
 }
 
 - (void)handleSwipeRight:(UISwipeGestureRecognizer *)recognizer
@@ -301,6 +307,13 @@
     if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft && self.isLeftSideViewRevealed)
         [self hideLeftSideView];
 }
+
+//- (void)handleTapGesture:(UITapGestureRecognizer *)recognizer
+//{
+//    if (self.isLeftSideViewRevealed) {
+//        [self hideLeftSideView];
+//    }
+//}
 
 #pragma mark -
 #pragma mark UIGestureRecognizerDelegate Methods
@@ -329,7 +342,6 @@
                          }];
         
         self.leftSideViewRevealed = YES;
-//    }
 }
 
 - (void)hideLeftSideView
