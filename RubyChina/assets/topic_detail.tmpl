@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset='utf-8' />
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no; width=device-width;">
+        <link rel="stylesheet" type="text/css" href="ruby_china.css">        
+    </head>
+    <body>
+        <div id="main" class="container-fluid">
+            <div class="content">
+                <div id="topic_show" class="topics box hfeed">
+                    <div class="topic hentry ">
+                        <div class="infos">
+                            <div class="pull-right avatar_large">
+                                <a href="rcuser://{{topic.user.login}}"><img src="{{topic.user.avatarUrl}}" alt="" class="uface" style="width:48px;height:48px;"></a>
+                            </div>
+                            <h1 class="entry-title">{{topic.title}}</h1>
+                            <div class="info leader">
+                                <a href="/topics/node2" class="node">{{topic.nodeName}}</a> •
+                                <a href="rcuser://{{topic.user.login}}">{{topic.user.login}}</a> • 于
+                                <abbr class="timeago">{{topic.createdDate | date_format_v2}}</abbr>发布
+                                {% if topic.repliesCount > 0 %}
+                                 • 最后由 <a href="rcuser://{{topic.lastReplyUserLogin}}">{{topic.lastReplyUserLogin}}</a> 
+                                于<abbr class="timeago">{{topic.repliedAt | date_format_v2}}</abbr> 回复
+                                {% /if %}
+                            </div>
+                        </div>
+                        <div class="body entry-content">{{topic.bodyHtml}}</div>
+                        <div class="tools pull-right"></div>
+                    </div>
+                </div>
+                {%if topic.repliesCount > 0%}
+                <div id="replies" class="box box_gray">
+                    <div class="total">共收到 <b>{{topic.repliesCount}}</b> 条回复</div>
+                    <div class="items">
+                        {% for reply in topic.replies %}
+                            <div class="reply" id="reply{{currentLoop.currentIndex | increase }}">
+                                <div class="pull-left face"><a href="rcuser://{{reply.user.login}}"><img src="{{reply.user.avatarUrl}}" alt=""></a></div>
+                                <div class="infos">
+                                    <div class="info">
+                                        <span class="name"><a href="rcuser://{{reply.user.login}}">{{reply.user.login}}</a> {{currentLoop.currentIndex | increase}}楼,{{reply.createdDate | date_format_v2}}</span>
+                                        <span class="opts"><a href="rcreply://{{currentLoop.currentIndex | increase}}#{{reply.user.login}}" class="icon small_reply" data-floor="1" data-login="vincent" title="回复此楼"></a></span>
+                                    </div>
+                                    <div class="body">{{reply.bodyHtml}}</div>
+                                </div>
+                            </div>
+                        {% /for %}
+                    </div>
+                </div>
+                {% /if %}
+            </div>
+        </div>
+    </body>
+</html>
