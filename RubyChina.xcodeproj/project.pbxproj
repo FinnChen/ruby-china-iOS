@@ -105,30 +105,31 @@
 		5F9F70871678CA750089E972 /* top_bar_refresh_btn_pressed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70081678CA750089E972 /* top_bar_refresh_btn_pressed@2x.png */; };
 		5F9F70881678CA750089E972 /* top_tool_bar_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70091678CA750089E972 /* top_tool_bar_background.png */; };
 		5F9F70891678CA750089E972 /* top_tool_bar_background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F700A1678CA750089E972 /* top_tool_bar_background@2x.png */; };
-		5F9F708A1678CA750089E972 /* RCNewTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F700E1678CA750089E972 /* RCNewTopicViewController.m */; };
-		5F9F708B1678CA750089E972 /* RCNewTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F700F1678CA750089E972 /* RCNewTopicViewController.xib */; };
-		5F9F708C1678CA750089E972 /* RCNodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70111678CA750089E972 /* RCNodesViewController.m */; };
-		5F9F708D1678CA750089E972 /* RCReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70131678CA750089E972 /* RCReplyViewController.m */; };
-		5F9F708E1678CA750089E972 /* RCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70151678CA750089E972 /* RCSettingViewController.m */; };
-		5F9F708F1678CA750089E972 /* RCSideContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70171678CA750089E972 /* RCSideContainerViewController.m */; };
-		5F9F70901678CA750089E972 /* RCTopicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70191678CA750089E972 /* RCTopicDetailViewController.m */; };
-		5F9F70911678CA750089E972 /* RCTopicMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F701B1678CA750089E972 /* RCTopicMasterViewController.m */; };
-		5F9F70921678CA750089E972 /* RCUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F701D1678CA750089E972 /* RCUserViewController.m */; };
-		5F9F70931678CA750089E972 /* RCUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F701E1678CA750089E972 /* RCUserViewController.xib */; };
-		5F9F70941678CA750089E972 /* UIViewController+RubyChina.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70201678CA750089E972 /* UIViewController+RubyChina.m */; };
-		5F9F70951678CA750089E972 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70231678CA750089E972 /* Node.m */; };
-		5F9F70971678CA750089E972 /* Reply.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70261678CA750089E972 /* Reply.m */; };
-		5F9F70981678CA750089E972 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70281678CA750089E972 /* Topic.m */; };
-		5F9F70991678CA750089E972 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F702A1678CA750089E972 /* User.m */; };
-		5F9F709A1678CA750089E972 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F702D1678CA750089E972 /* BButton.m */; };
-		5F9F709C1678CA750089E972 /* RCTopicTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70321678CA750089E972 /* RCTopicTableCell.m */; };
-		5F9F709F1678CC2E0089E972 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F709E1678CC2E0089E972 /* RCAppDelegate.m */; };
 		5F9F70A31678CCE90089E972 /* ruby_china.css in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70A01678CCE90089E972 /* ruby_china.css */; };
 		5F9F70A41678CCE90089E972 /* topic_detail.css in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70A11678CCE90089E972 /* topic_detail.css */; };
 		5F9F70A51678CCE90089E972 /* topic_detail.tmpl in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70A21678CCE90089E972 /* topic_detail.tmpl */; };
 		5F9F70B41678D1210089E972 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70B11678D1210089E972 /* Default-568h@2x.png */; };
 		5F9F70B51678D1210089E972 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70B21678D1210089E972 /* Default.png */; };
 		5F9F70B61678D1210089E972 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70B31678D1210089E972 /* Default@2x.png */; };
+		5F9F70F31678ECD40089E972 /* RCNewTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70CE1678ECD40089E972 /* RCNewTopicViewController.m */; };
+		5F9F70F41678ECD40089E972 /* RCNewTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70CF1678ECD40089E972 /* RCNewTopicViewController.xib */; };
+		5F9F70F51678ECD40089E972 /* RCNodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70D11678ECD40089E972 /* RCNodesViewController.m */; };
+		5F9F70F61678ECD40089E972 /* RCReplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70D31678ECD40089E972 /* RCReplyViewController.m */; };
+		5F9F70F71678ECD40089E972 /* RCSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70D51678ECD40089E972 /* RCSettingViewController.m */; };
+		5F9F70F81678ECD40089E972 /* RCSideContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70D71678ECD40089E972 /* RCSideContainerViewController.m */; };
+		5F9F70F91678ECD40089E972 /* RCTopicDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70D91678ECD40089E972 /* RCTopicDetailViewController.m */; };
+		5F9F70FA1678ECD40089E972 /* RCTopicMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70DB1678ECD40089E972 /* RCTopicMasterViewController.m */; };
+		5F9F70FB1678ECD40089E972 /* RCUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70DD1678ECD40089E972 /* RCUserViewController.m */; };
+		5F9F70FC1678ECD40089E972 /* RCUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70DE1678ECD40089E972 /* RCUserViewController.xib */; };
+		5F9F70FD1678ECD40089E972 /* UIViewController+RubyChina.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E01678ECD40089E972 /* UIViewController+RubyChina.m */; };
+		5F9F70FE1678ECD40089E972 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E31678ECD40089E972 /* Node.m */; };
+		5F9F70FF1678ECD40089E972 /* Node.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E41678ECD40089E972 /* Node.xcdatamodeld */; };
+		5F9F71001678ECD40089E972 /* Reply.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E61678ECD40089E972 /* Reply.m */; };
+		5F9F71011678ECD40089E972 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E81678ECD40089E972 /* Topic.m */; };
+		5F9F71021678ECD40089E972 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70EA1678ECD40089E972 /* User.m */; };
+		5F9F71031678ECD40089E972 /* RCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70EC1678ECD40089E972 /* RCAppDelegate.m */; };
+		5F9F71041678ECD40089E972 /* BButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70EF1678ECD40089E972 /* BButton.m */; };
+		5F9F71051678ECD40089E972 /* RCTopicTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70F21678ECD40089E972 /* RCTopicTableCell.m */; };
 		5FCBA3D7165D495300EB8373 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCBA3D6165D495300EB8373 /* CoreGraphics.framework */; };
 		5FCBA3D9165D4A5E00EB8373 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCBA3D8165D4A5E00EB8373 /* libicucore.dylib */; };
 		5FEBEC501676253E00A906A2 /* node_seed.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5FEBEC4F1676253E00A906A2 /* node_seed.sqlite */; };
@@ -265,47 +266,47 @@
 		5F9F70081678CA750089E972 /* top_bar_refresh_btn_pressed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_bar_refresh_btn_pressed@2x.png"; sourceTree = "<group>"; };
 		5F9F70091678CA750089E972 /* top_tool_bar_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_tool_bar_background.png; sourceTree = "<group>"; };
 		5F9F700A1678CA750089E972 /* top_tool_bar_background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top_tool_bar_background@2x.png"; sourceTree = "<group>"; };
-		5F9F700D1678CA750089E972 /* RCNewTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNewTopicViewController.h; sourceTree = "<group>"; };
-		5F9F700E1678CA750089E972 /* RCNewTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNewTopicViewController.m; sourceTree = "<group>"; };
-		5F9F700F1678CA750089E972 /* RCNewTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCNewTopicViewController.xib; sourceTree = "<group>"; };
-		5F9F70101678CA750089E972 /* RCNodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNodesViewController.h; sourceTree = "<group>"; };
-		5F9F70111678CA750089E972 /* RCNodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNodesViewController.m; sourceTree = "<group>"; };
-		5F9F70121678CA750089E972 /* RCReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCReplyViewController.h; sourceTree = "<group>"; };
-		5F9F70131678CA750089E972 /* RCReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCReplyViewController.m; sourceTree = "<group>"; };
-		5F9F70141678CA750089E972 /* RCSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSettingViewController.h; sourceTree = "<group>"; };
-		5F9F70151678CA750089E972 /* RCSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSettingViewController.m; sourceTree = "<group>"; };
-		5F9F70161678CA750089E972 /* RCSideContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSideContainerViewController.h; sourceTree = "<group>"; };
-		5F9F70171678CA750089E972 /* RCSideContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSideContainerViewController.m; sourceTree = "<group>"; };
-		5F9F70181678CA750089E972 /* RCTopicDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopicDetailViewController.h; sourceTree = "<group>"; };
-		5F9F70191678CA750089E972 /* RCTopicDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicDetailViewController.m; sourceTree = "<group>"; };
-		5F9F701A1678CA750089E972 /* RCTopicMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopicMasterViewController.h; sourceTree = "<group>"; };
-		5F9F701B1678CA750089E972 /* RCTopicMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicMasterViewController.m; sourceTree = "<group>"; };
-		5F9F701C1678CA750089E972 /* RCUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUserViewController.h; sourceTree = "<group>"; };
-		5F9F701D1678CA750089E972 /* RCUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUserViewController.m; sourceTree = "<group>"; };
-		5F9F701E1678CA750089E972 /* RCUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCUserViewController.xib; sourceTree = "<group>"; };
-		5F9F701F1678CA750089E972 /* UIViewController+RubyChina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RubyChina.h"; sourceTree = "<group>"; };
-		5F9F70201678CA750089E972 /* UIViewController+RubyChina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RubyChina.m"; sourceTree = "<group>"; };
-		5F9F70221678CA750089E972 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		5F9F70231678CA750089E972 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
-		5F9F70251678CA750089E972 /* Reply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reply.h; sourceTree = "<group>"; };
-		5F9F70261678CA750089E972 /* Reply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reply.m; sourceTree = "<group>"; };
-		5F9F70271678CA750089E972 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
-		5F9F70281678CA750089E972 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
-		5F9F70291678CA750089E972 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		5F9F702A1678CA750089E972 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		5F9F702C1678CA750089E972 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
-		5F9F702D1678CA750089E972 /* BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BButton.m; sourceTree = "<group>"; };
-		5F9F70301678CA750089E972 /* RCNodesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNodesDelegate.h; sourceTree = "<group>"; };
-		5F9F70311678CA750089E972 /* RCTopicTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopicTableCell.h; sourceTree = "<group>"; };
-		5F9F70321678CA750089E972 /* RCTopicTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicTableCell.m; sourceTree = "<group>"; };
-		5F9F709D1678CC2E0089E972 /* RCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
-		5F9F709E1678CC2E0089E972 /* RCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
 		5F9F70A01678CCE90089E972 /* ruby_china.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = ruby_china.css; sourceTree = "<group>"; };
 		5F9F70A11678CCE90089E972 /* topic_detail.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = topic_detail.css; sourceTree = "<group>"; };
 		5F9F70A21678CCE90089E972 /* topic_detail.tmpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = topic_detail.tmpl; sourceTree = "<group>"; };
 		5F9F70B11678D1210089E972 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5F9F70B21678D1210089E972 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5F9F70B31678D1210089E972 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5F9F70CD1678ECD40089E972 /* RCNewTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNewTopicViewController.h; sourceTree = "<group>"; };
+		5F9F70CE1678ECD40089E972 /* RCNewTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNewTopicViewController.m; sourceTree = "<group>"; };
+		5F9F70CF1678ECD40089E972 /* RCNewTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCNewTopicViewController.xib; sourceTree = "<group>"; };
+		5F9F70D01678ECD40089E972 /* RCNodesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNodesViewController.h; sourceTree = "<group>"; };
+		5F9F70D11678ECD40089E972 /* RCNodesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNodesViewController.m; sourceTree = "<group>"; };
+		5F9F70D21678ECD40089E972 /* RCReplyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCReplyViewController.h; sourceTree = "<group>"; };
+		5F9F70D31678ECD40089E972 /* RCReplyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCReplyViewController.m; sourceTree = "<group>"; };
+		5F9F70D41678ECD40089E972 /* RCSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSettingViewController.h; sourceTree = "<group>"; };
+		5F9F70D51678ECD40089E972 /* RCSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSettingViewController.m; sourceTree = "<group>"; };
+		5F9F70D61678ECD40089E972 /* RCSideContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCSideContainerViewController.h; sourceTree = "<group>"; };
+		5F9F70D71678ECD40089E972 /* RCSideContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCSideContainerViewController.m; sourceTree = "<group>"; };
+		5F9F70D81678ECD40089E972 /* RCTopicDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopicDetailViewController.h; sourceTree = "<group>"; };
+		5F9F70D91678ECD40089E972 /* RCTopicDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicDetailViewController.m; sourceTree = "<group>"; };
+		5F9F70DA1678ECD40089E972 /* RCTopicMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopicMasterViewController.h; sourceTree = "<group>"; };
+		5F9F70DB1678ECD40089E972 /* RCTopicMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicMasterViewController.m; sourceTree = "<group>"; };
+		5F9F70DC1678ECD40089E972 /* RCUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUserViewController.h; sourceTree = "<group>"; };
+		5F9F70DD1678ECD40089E972 /* RCUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUserViewController.m; sourceTree = "<group>"; };
+		5F9F70DE1678ECD40089E972 /* RCUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCUserViewController.xib; sourceTree = "<group>"; };
+		5F9F70DF1678ECD40089E972 /* UIViewController+RubyChina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RubyChina.h"; sourceTree = "<group>"; };
+		5F9F70E01678ECD40089E972 /* UIViewController+RubyChina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RubyChina.m"; sourceTree = "<group>"; };
+		5F9F70E21678ECD40089E972 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		5F9F70E31678ECD40089E972 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		5F9F70E51678ECD40089E972 /* Reply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reply.h; sourceTree = "<group>"; };
+		5F9F70E61678ECD40089E972 /* Reply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reply.m; sourceTree = "<group>"; };
+		5F9F70E71678ECD40089E972 /* Topic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Topic.h; sourceTree = "<group>"; };
+		5F9F70E81678ECD40089E972 /* Topic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Topic.m; sourceTree = "<group>"; };
+		5F9F70E91678ECD40089E972 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		5F9F70EA1678ECD40089E972 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		5F9F70EB1678ECD40089E972 /* RCAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCAppDelegate.h; sourceTree = "<group>"; };
+		5F9F70EC1678ECD40089E972 /* RCAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCAppDelegate.m; sourceTree = "<group>"; };
+		5F9F70EE1678ECD40089E972 /* BButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BButton.h; sourceTree = "<group>"; };
+		5F9F70EF1678ECD40089E972 /* BButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BButton.m; sourceTree = "<group>"; };
+		5F9F70F01678ECD40089E972 /* RCNodesDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNodesDelegate.h; sourceTree = "<group>"; };
+		5F9F70F11678ECD40089E972 /* RCTopicTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTopicTableCell.h; sourceTree = "<group>"; };
+		5F9F70F21678ECD40089E972 /* RCTopicTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicTableCell.m; sourceTree = "<group>"; };
 		5FCBA3D6165D495300EB8373 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5FCBA3D8165D4A5E00EB8373 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		5FEBEC4F1676253E00A906A2 /* node_seed.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = node_seed.sqlite; sourceTree = "<group>"; };
@@ -363,9 +364,9 @@
 		5F1A051E164FA80E007C0FBB /* RubyChina */ = {
 			isa = PBXGroup;
 			children = (
+				5F9F70CB1678ECD40089E972 /* class */,
 				5F9F6FAF1678CA750089E972 /* additions */,
 				5F9F6FB41678CA750089E972 /* assets */,
-				5F9F700B1678CA750089E972 /* classes */,
 				5F9F6F881678CA640089E972 /* 3rdParty */,
 				5F1A051F164FA80E007C0FBB /* Supporting Files */,
 				5F8EA3F31663BBBF0013426B /* Node.xcdatamodeld */,
@@ -543,68 +544,69 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		5F9F700B1678CA750089E972 /* classes */ = {
+		5F9F70CB1678ECD40089E972 /* class */ = {
 			isa = PBXGroup;
 			children = (
-				5F9F709D1678CC2E0089E972 /* RCAppDelegate.h */,
-				5F9F709E1678CC2E0089E972 /* RCAppDelegate.m */,
-				5F9F700C1678CA750089E972 /* controllers */,
-				5F9F70211678CA750089E972 /* models */,
-				5F9F702B1678CA750089E972 /* views */,
+				5F9F70CC1678ECD40089E972 /* controllers */,
+				5F9F70E11678ECD40089E972 /* models */,
+				5F9F70EB1678ECD40089E972 /* RCAppDelegate.h */,
+				5F9F70EC1678ECD40089E972 /* RCAppDelegate.m */,
+				5F9F70ED1678ECD40089E972 /* views */,
 			);
-			path = classes;
+			path = class;
 			sourceTree = "<group>";
 		};
-		5F9F700C1678CA750089E972 /* controllers */ = {
+		5F9F70CC1678ECD40089E972 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5F9F700D1678CA750089E972 /* RCNewTopicViewController.h */,
-				5F9F700E1678CA750089E972 /* RCNewTopicViewController.m */,
-				5F9F700F1678CA750089E972 /* RCNewTopicViewController.xib */,
-				5F9F70101678CA750089E972 /* RCNodesViewController.h */,
-				5F9F70111678CA750089E972 /* RCNodesViewController.m */,
-				5F9F70121678CA750089E972 /* RCReplyViewController.h */,
-				5F9F70131678CA750089E972 /* RCReplyViewController.m */,
-				5F9F70141678CA750089E972 /* RCSettingViewController.h */,
-				5F9F70151678CA750089E972 /* RCSettingViewController.m */,
-				5F9F70161678CA750089E972 /* RCSideContainerViewController.h */,
-				5F9F70171678CA750089E972 /* RCSideContainerViewController.m */,
-				5F9F70181678CA750089E972 /* RCTopicDetailViewController.h */,
-				5F9F70191678CA750089E972 /* RCTopicDetailViewController.m */,
-				5F9F701A1678CA750089E972 /* RCTopicMasterViewController.h */,
-				5F9F701B1678CA750089E972 /* RCTopicMasterViewController.m */,
-				5F9F701C1678CA750089E972 /* RCUserViewController.h */,
-				5F9F701D1678CA750089E972 /* RCUserViewController.m */,
-				5F9F701E1678CA750089E972 /* RCUserViewController.xib */,
-				5F9F701F1678CA750089E972 /* UIViewController+RubyChina.h */,
-				5F9F70201678CA750089E972 /* UIViewController+RubyChina.m */,
+				5F9F70CD1678ECD40089E972 /* RCNewTopicViewController.h */,
+				5F9F70CE1678ECD40089E972 /* RCNewTopicViewController.m */,
+				5F9F70CF1678ECD40089E972 /* RCNewTopicViewController.xib */,
+				5F9F70D01678ECD40089E972 /* RCNodesViewController.h */,
+				5F9F70D11678ECD40089E972 /* RCNodesViewController.m */,
+				5F9F70D21678ECD40089E972 /* RCReplyViewController.h */,
+				5F9F70D31678ECD40089E972 /* RCReplyViewController.m */,
+				5F9F70D41678ECD40089E972 /* RCSettingViewController.h */,
+				5F9F70D51678ECD40089E972 /* RCSettingViewController.m */,
+				5F9F70D61678ECD40089E972 /* RCSideContainerViewController.h */,
+				5F9F70D71678ECD40089E972 /* RCSideContainerViewController.m */,
+				5F9F70D81678ECD40089E972 /* RCTopicDetailViewController.h */,
+				5F9F70D91678ECD40089E972 /* RCTopicDetailViewController.m */,
+				5F9F70DA1678ECD40089E972 /* RCTopicMasterViewController.h */,
+				5F9F70DB1678ECD40089E972 /* RCTopicMasterViewController.m */,
+				5F9F70DC1678ECD40089E972 /* RCUserViewController.h */,
+				5F9F70DD1678ECD40089E972 /* RCUserViewController.m */,
+				5F9F70DE1678ECD40089E972 /* RCUserViewController.xib */,
+				5F9F70DF1678ECD40089E972 /* UIViewController+RubyChina.h */,
+				5F9F70E01678ECD40089E972 /* UIViewController+RubyChina.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
 		};
-		5F9F70211678CA750089E972 /* models */ = {
+		5F9F70E11678ECD40089E972 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				5F9F70221678CA750089E972 /* Node.h */,
-				5F9F70231678CA750089E972 /* Node.m */,
-				5F9F70251678CA750089E972 /* Reply.h */,
-				5F9F70261678CA750089E972 /* Reply.m */,
-				5F9F70271678CA750089E972 /* Topic.h */,
-				5F9F70281678CA750089E972 /* Topic.m */,
-				5F9F70291678CA750089E972 /* User.h */,
-				5F9F702A1678CA750089E972 /* User.m */,
+				5F9F70E21678ECD40089E972 /* Node.h */,
+				5F9F70E31678ECD40089E972 /* Node.m */,
+				5F9F70E41678ECD40089E972 /* Node.xcdatamodeld */,
+				5F9F70E51678ECD40089E972 /* Reply.h */,
+				5F9F70E61678ECD40089E972 /* Reply.m */,
+				5F9F70E71678ECD40089E972 /* Topic.h */,
+				5F9F70E81678ECD40089E972 /* Topic.m */,
+				5F9F70E91678ECD40089E972 /* User.h */,
+				5F9F70EA1678ECD40089E972 /* User.m */,
 			);
 			path = models;
 			sourceTree = "<group>";
 		};
-		5F9F702B1678CA750089E972 /* views */ = {
+		5F9F70ED1678ECD40089E972 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				5F9F702C1678CA750089E972 /* BButton.h */,
-				5F9F702D1678CA750089E972 /* BButton.m */,
-				5F9F70301678CA750089E972 /* RCNodesDelegate.h */,
-				5F9F70311678CA750089E972 /* RCTopicTableCell.h */,
-				5F9F70321678CA750089E972 /* RCTopicTableCell.m */,
+				5F9F70EE1678ECD40089E972 /* BButton.h */,
+				5F9F70EF1678ECD40089E972 /* BButton.m */,
+				5F9F70F01678ECD40089E972 /* RCNodesDelegate.h */,
+				5F9F70F11678ECD40089E972 /* RCTopicTableCell.h */,
+				5F9F70F21678ECD40089E972 /* RCTopicTableCell.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -747,14 +749,14 @@
 				5F9F70871678CA750089E972 /* top_bar_refresh_btn_pressed@2x.png in Resources */,
 				5F9F70881678CA750089E972 /* top_tool_bar_background.png in Resources */,
 				5F9F70891678CA750089E972 /* top_tool_bar_background@2x.png in Resources */,
-				5F9F708B1678CA750089E972 /* RCNewTopicViewController.xib in Resources */,
-				5F9F70931678CA750089E972 /* RCUserViewController.xib in Resources */,
 				5F9F70A31678CCE90089E972 /* ruby_china.css in Resources */,
 				5F9F70A41678CCE90089E972 /* topic_detail.css in Resources */,
 				5F9F70A51678CCE90089E972 /* topic_detail.tmpl in Resources */,
 				5F9F70B41678D1210089E972 /* Default-568h@2x.png in Resources */,
 				5F9F70B51678D1210089E972 /* Default.png in Resources */,
 				5F9F70B61678D1210089E972 /* Default@2x.png in Resources */,
+				5F9F70F41678ECD40089E972 /* RCNewTopicViewController.xib in Resources */,
+				5F9F70FC1678ECD40089E972 /* RCUserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -794,22 +796,23 @@
 				5F9F6FAA1678CA640089E972 /* RegexKitLite.m in Sources */,
 				5F9F70331678CA750089E972 /* NSDate+Timeago.m in Sources */,
 				5F9F70341678CA750089E972 /* UIBarButtonItem+RubyChina.m in Sources */,
-				5F9F708A1678CA750089E972 /* RCNewTopicViewController.m in Sources */,
-				5F9F708C1678CA750089E972 /* RCNodesViewController.m in Sources */,
-				5F9F708D1678CA750089E972 /* RCReplyViewController.m in Sources */,
-				5F9F708E1678CA750089E972 /* RCSettingViewController.m in Sources */,
-				5F9F708F1678CA750089E972 /* RCSideContainerViewController.m in Sources */,
-				5F9F70901678CA750089E972 /* RCTopicDetailViewController.m in Sources */,
-				5F9F70911678CA750089E972 /* RCTopicMasterViewController.m in Sources */,
-				5F9F70921678CA750089E972 /* RCUserViewController.m in Sources */,
-				5F9F70941678CA750089E972 /* UIViewController+RubyChina.m in Sources */,
-				5F9F70951678CA750089E972 /* Node.m in Sources */,
-				5F9F70971678CA750089E972 /* Reply.m in Sources */,
-				5F9F70981678CA750089E972 /* Topic.m in Sources */,
-				5F9F70991678CA750089E972 /* User.m in Sources */,
-				5F9F709A1678CA750089E972 /* BButton.m in Sources */,
-				5F9F709C1678CA750089E972 /* RCTopicTableCell.m in Sources */,
-				5F9F709F1678CC2E0089E972 /* RCAppDelegate.m in Sources */,
+				5F9F70F31678ECD40089E972 /* RCNewTopicViewController.m in Sources */,
+				5F9F70F51678ECD40089E972 /* RCNodesViewController.m in Sources */,
+				5F9F70F61678ECD40089E972 /* RCReplyViewController.m in Sources */,
+				5F9F70F71678ECD40089E972 /* RCSettingViewController.m in Sources */,
+				5F9F70F81678ECD40089E972 /* RCSideContainerViewController.m in Sources */,
+				5F9F70F91678ECD40089E972 /* RCTopicDetailViewController.m in Sources */,
+				5F9F70FA1678ECD40089E972 /* RCTopicMasterViewController.m in Sources */,
+				5F9F70FB1678ECD40089E972 /* RCUserViewController.m in Sources */,
+				5F9F70FD1678ECD40089E972 /* UIViewController+RubyChina.m in Sources */,
+				5F9F70FE1678ECD40089E972 /* Node.m in Sources */,
+				5F9F70FF1678ECD40089E972 /* Node.xcdatamodeld in Sources */,
+				5F9F71001678ECD40089E972 /* Reply.m in Sources */,
+				5F9F71011678ECD40089E972 /* Topic.m in Sources */,
+				5F9F71021678ECD40089E972 /* User.m in Sources */,
+				5F9F71031678ECD40089E972 /* RCAppDelegate.m in Sources */,
+				5F9F71041678ECD40089E972 /* BButton.m in Sources */,
+				5F9F71051678ECD40089E972 /* RCTopicTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -946,6 +949,14 @@
 				5F8EA3F41663BBBF0013426B /* Node.xcdatamodel */,
 			);
 			currentVersion = 5F8EA3F41663BBBF0013426B /* Node.xcdatamodel */;
+			path = Node.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		5F9F70E41678ECD40089E972 /* Node.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+			);
 			path = Node.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
