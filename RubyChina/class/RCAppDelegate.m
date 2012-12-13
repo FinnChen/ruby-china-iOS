@@ -59,6 +59,7 @@
     RKURL *baseURL = [RKURL URLWithBaseURLString:@"http://ruby-china.org/api/"];
     RKObjectManager *objectManager = [RKObjectManager objectManagerWithBaseURL:baseURL];
     objectManager.client.baseURL = baseURL;
+    objectManager.requestQueue.showsNetworkActivityIndicatorWhenBusy = YES;
     
     NSString *storeFilename = @"RubyChina.sqlite";
     NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
@@ -73,10 +74,8 @@
         }
     }
     
-    RKManagedObjectStore *objectStore = [RKManagedObjectStore objectStoreWithStoreFilename:storeFilename];
+    RKManagedObjectStore *objectStore = [RKManagedObjectStore objectStoreWithStoreFilename: storeFilename];
     objectManager.objectStore = objectStore;
-    
-    objectManager.requestQueue.showsNetworkActivityIndicatorWhenBusy = YES;
     
     // Topic Object Mapping
     RKObjectMapping *topicMapping = [RKObjectMapping mappingForClass:[Topic class]];

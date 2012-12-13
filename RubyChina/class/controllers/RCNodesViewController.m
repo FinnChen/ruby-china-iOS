@@ -13,7 +13,7 @@
 
 #define kNodeDefaultWeight 999
 
-@interface RCNodesViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface RCNodesViewController ()</*RKObjectLoaderDelegate,*/ UITableViewDataSource, UITableViewDelegate>
 
 @end
 
@@ -72,7 +72,7 @@
 //    RKObjectManager *objectManager = [RKObjectManager sharedManager];
 //    RKManagedObjectMapping *nodeMapping =[RKManagedObjectMapping mappingForClass:[Node class] inManagedObjectStore:objectManager.objectStore];
 //    nodeMapping.primaryKeyAttribute = @"nodeID";
-//    [nodeMapping mapKeyPath:@"_id" toAttribute:@"nodeID"];
+//    [nodeMapping mapKeyPath:@"id" toAttribute:@"nodeID"];
 //    [nodeMapping mapKeyPath:@"name" toAttribute:@"nodeName"];
 //
 //    [objectManager.mappingProvider setMapping:nodeMapping forKeyPath:@""];
