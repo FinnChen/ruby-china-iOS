@@ -25,6 +25,7 @@
 
 @interface RCSideContainerViewController () <RCNodesDelegate, UITableViewDataSource, UITableViewDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIView *coverView;
 @property (nonatomic, copy) NSArray *menus;
 @property (nonatomic, strong) NSMutableArray *nodes;
 @end
@@ -40,6 +41,7 @@
 @synthesize selectedIndex = _selectedIndex;
 
 @synthesize tableView = _tableView;
+@synthesize coverView = _coverView;
 @synthesize menus = _menus;
 @synthesize nodes = _nodes;
 
@@ -78,6 +80,16 @@
     [panGesture requireGestureRecognizerToFail:swipeRight];
     [panGesture requireGestureRecognizerToFail:swipeLeft];
     
+    
+    CGSize size = _rightContentView.bounds.size;
+    UIView *aCoverView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, size.width, size.height)];
+    aCoverView.backgroundColor = [UIColor clearColor];
+    
+    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
+    [aCoverView addGestureRecognizer:tapGesture];
+    
+    _coverView = aCoverView;
+    
 //    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleTapGesture:)];
 //    [_rightContentView addGestureRecognizer:tapGesture];
 //    [tapGesture requireGestureRecognizerToFail:panGesture];
@@ -90,8 +102,6 @@
 
     // add the default childViewController;
     UIViewController *controller = [_viewControllerPairs objectForKey:_menus[1]];
-    
-    CGSize size = _rightContentView.bounds.size;
     controller.view.frame = CGRectMake(0.0f, 0.0f, size.width, size.height);
     
     [self addChildViewController:controller];
@@ -271,6 +281,8 @@
         }
     }];
 }
+
+
 #pragma mark -
 #pragma mark UIGesture handle methods
 
@@ -285,6 +297,7 @@
         frame.origin.x = MAX(MIN(translation.x, RC_LEFT_SIDE_WIDTH), 0.0f);
     }
     _rightContentView.frame = frame;
+
     
     if (recognizer.state == UIGestureRecognizerStateEnded) {
         if (frame.origin.x < 100.0f) {
@@ -293,8 +306,8 @@
             [self revealLeftSideView];
         }
     }
-    
 }
+
 
 - (void)handleSwipeRight:(UISwipeGestureRecognizer *)recognizer
 {
@@ -302,59 +315,90 @@
         [self revealLeftSideView];
 }
 
+
 - (void)handleSwipeLeft:(UISwipeGestureRecognizer *)recognizer
 {
     if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft && self.isLeftSideViewRevealed)
         [self hideLeftSideView];
 }
 
-//- (void)handleTapGesture:(UITapGestureRecognizer *)recognizer
-//{
-//    if (self.isLeftSideViewRevealed) {
-//        [self hideLeftSideView];
-//    }
-//}
+
+- (void)handleTapGesture:(UITapGestureRecognizer *)recognizer
+{
+    if (self.isLeftSideViewRevealed) {
+        [self hideLeftSideView];
+    }
+}
+
 
 #pragma mark -
 #pragma mark UIGestureRecognizerDelegate Methods
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
 {
+    // when the topic detail controller is pushed, disable the gesture recognizer
     if (_selectedViewController.childViewControllers.count > 1) {
+        return NO;
+    }
+    
+    if ([gestureRecognizer respondsToSelector:@selector(translationInView:)]) {
+        CGPoint translation = [(UIPanGestureRecognizer *)gestureRecognizer translationInView:_rightContentView];
+        if (fabs(translation.y) > fabs(translation.x))
+            return NO;
+    }
+    
+    // add coverView to stop scroll when sidebar show
+    if ([[_rightContentView subviews] containsObject:_coverView] == NO) {
+        [_rightContentView addSubview:_coverView];
+    }
+    
+    return YES;
+}
+
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
+{
+    if ([gestureRecognizer.view isEqual:_rightContentView] && ![otherGestureRecognizer.view isEqual:_rightContentView]) {
         return NO;
     }
     
     return YES;
 }
 
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer
-{
-    return YES;
-}
 
 - (void)revealLeftSideView
 {
-        [UIView animateWithDuration:0.3f
-                         animations:^{
-                             CGRect frame = _rightContentView.frame;
-                             frame.origin.x = RC_LEFT_SIDE_WIDTH;
-                             _rightContentView.frame = frame;
-                         }];
-        
-        self.leftSideViewRevealed = YES;
+    [UIView animateWithDuration:0.3f
+                     animations:^{
+                         CGRect frame = _rightContentView.frame;
+                         frame.origin.x = RC_LEFT_SIDE_WIDTH;
+                         _rightContentView.frame = frame;
+                     }];
+    
+    self.leftSideViewRevealed = YES;
+    
+    if ([[_rightContentView subviews] containsObject:_coverView] == NO) {
+        [_rightContentView addSubview:_coverView];
+    }
 }
+
 
 - (void)hideLeftSideView
 {
-        [UIView animateWithDuration:0.3f
-                         animations:^{
-                             CGRect frame = _rightContentView.frame;
-                             frame.origin.x = 0.0f;
-                             _rightContentView.frame = frame;
-                             
-                         }];
-        self.leftSideViewRevealed = NO;
+    [UIView animateWithDuration:0.3f
+                     animations:^{
+                         CGRect frame = _rightContentView.frame;
+                         frame.origin.x = 0.0f;
+                         _rightContentView.frame = frame;
+                         
+                     }];
+    self.leftSideViewRevealed = NO;
+    
+    if ([[_rightContentView subviews] containsObject:_coverView]) {
+        [_coverView removeFromSuperview];
+    }
 }
+
 
 - (void)ensureSelectedIndex
 {
@@ -381,6 +425,7 @@
     [_tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] animated:NO scrollPosition:UITableViewScrollPositionNone];
 }
 
+
 #pragma mark -
 #pragma mark Core Data related Methods
 
@@ -396,6 +441,7 @@
     [_nodes addObjectsFromArray:[Node objectsWithFetchRequest:request]];
     
 }
+
 
 - (void)updateNodesWeight
 {
@@ -579,6 +625,7 @@
     
     [self updateNodesWeight];
 }
+
 
 #pragma mark RCNodeDelegate method
 

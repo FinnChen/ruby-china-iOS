@@ -108,9 +108,6 @@
 		5F9F70A31678CCE90089E972 /* ruby_china.css in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70A01678CCE90089E972 /* ruby_china.css */; };
 		5F9F70A41678CCE90089E972 /* topic_detail.css in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70A11678CCE90089E972 /* topic_detail.css */; };
 		5F9F70A51678CCE90089E972 /* topic_detail.tmpl in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70A21678CCE90089E972 /* topic_detail.tmpl */; };
-		5F9F70B41678D1210089E972 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70B11678D1210089E972 /* Default-568h@2x.png */; };
-		5F9F70B51678D1210089E972 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70B21678D1210089E972 /* Default.png */; };
-		5F9F70B61678D1210089E972 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70B31678D1210089E972 /* Default@2x.png */; };
 		5F9F70F31678ECD40089E972 /* RCNewTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70CE1678ECD40089E972 /* RCNewTopicViewController.m */; };
 		5F9F70F41678ECD40089E972 /* RCNewTopicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70CF1678ECD40089E972 /* RCNewTopicViewController.xib */; };
 		5F9F70F51678ECD40089E972 /* RCNodesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70D11678ECD40089E972 /* RCNodesViewController.m */; };
@@ -132,6 +129,9 @@
 		5F9F71051678ECD40089E972 /* RCTopicTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70F21678ECD40089E972 /* RCTopicTableCell.m */; };
 		5FCBA3D7165D495300EB8373 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCBA3D6165D495300EB8373 /* CoreGraphics.framework */; };
 		5FCBA3D9165D4A5E00EB8373 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FCBA3D8165D4A5E00EB8373 /* libicucore.dylib */; };
+		5FCF8C82167A2EAE005504FE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */; };
+		5FCF8C83167A2EAE005504FE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8C80167A2EAD005504FE /* Default.png */; };
+		5FCF8C84167A2EAE005504FE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8C81167A2EAD005504FE /* Default@2x.png */; };
 		5FEBEC501676253E00A906A2 /* node_seed.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5FEBEC4F1676253E00A906A2 /* node_seed.sqlite */; };
 		6ACB11F251C645B2AA95427F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D4D26BD238464EAE106F80 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -269,9 +269,6 @@
 		5F9F70A01678CCE90089E972 /* ruby_china.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = ruby_china.css; sourceTree = "<group>"; };
 		5F9F70A11678CCE90089E972 /* topic_detail.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = topic_detail.css; sourceTree = "<group>"; };
 		5F9F70A21678CCE90089E972 /* topic_detail.tmpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = topic_detail.tmpl; sourceTree = "<group>"; };
-		5F9F70B11678D1210089E972 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5F9F70B21678D1210089E972 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		5F9F70B31678D1210089E972 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5F9F70CD1678ECD40089E972 /* RCNewTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCNewTopicViewController.h; sourceTree = "<group>"; };
 		5F9F70CE1678ECD40089E972 /* RCNewTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCNewTopicViewController.m; sourceTree = "<group>"; };
 		5F9F70CF1678ECD40089E972 /* RCNewTopicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCNewTopicViewController.xib; sourceTree = "<group>"; };
@@ -309,6 +306,9 @@
 		5F9F70F21678ECD40089E972 /* RCTopicTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicTableCell.m; sourceTree = "<group>"; };
 		5FCBA3D6165D495300EB8373 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5FCBA3D8165D4A5E00EB8373 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5FCF8C80167A2EAD005504FE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5FCF8C81167A2EAD005504FE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5FEBEC4F1676253E00A906A2 /* node_seed.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = node_seed.sqlite; sourceTree = "<group>"; };
 		88D4D26BD238464EAE106F80 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -371,9 +371,9 @@
 				5F1A051F164FA80E007C0FBB /* Supporting Files */,
 				5F8EA3F31663BBBF0013426B /* Node.xcdatamodeld */,
 				5FEBEC4F1676253E00A906A2 /* node_seed.sqlite */,
-				5F9F70B11678D1210089E972 /* Default-568h@2x.png */,
-				5F9F70B21678D1210089E972 /* Default.png */,
-				5F9F70B31678D1210089E972 /* Default@2x.png */,
+				5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */,
+				5FCF8C80167A2EAD005504FE /* Default.png */,
+				5FCF8C81167A2EAD005504FE /* Default@2x.png */,
 			);
 			path = RubyChina;
 			sourceTree = "<group>";
@@ -547,10 +547,10 @@
 		5F9F70CB1678ECD40089E972 /* class */ = {
 			isa = PBXGroup;
 			children = (
-				5F9F70CC1678ECD40089E972 /* controllers */,
-				5F9F70E11678ECD40089E972 /* models */,
 				5F9F70EB1678ECD40089E972 /* RCAppDelegate.h */,
 				5F9F70EC1678ECD40089E972 /* RCAppDelegate.m */,
+				5F9F70CC1678ECD40089E972 /* controllers */,
+				5F9F70E11678ECD40089E972 /* models */,
 				5F9F70ED1678ECD40089E972 /* views */,
 			);
 			path = class;
@@ -752,11 +752,11 @@
 				5F9F70A31678CCE90089E972 /* ruby_china.css in Resources */,
 				5F9F70A41678CCE90089E972 /* topic_detail.css in Resources */,
 				5F9F70A51678CCE90089E972 /* topic_detail.tmpl in Resources */,
-				5F9F70B41678D1210089E972 /* Default-568h@2x.png in Resources */,
-				5F9F70B51678D1210089E972 /* Default.png in Resources */,
-				5F9F70B61678D1210089E972 /* Default@2x.png in Resources */,
 				5F9F70F41678ECD40089E972 /* RCNewTopicViewController.xib in Resources */,
 				5F9F70FC1678ECD40089E972 /* RCUserViewController.xib in Resources */,
+				5FCF8C82167A2EAE005504FE /* Default-568h@2x.png in Resources */,
+				5FCF8C83167A2EAE005504FE /* Default.png in Resources */,
+				5FCF8C84167A2EAE005504FE /* Default@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

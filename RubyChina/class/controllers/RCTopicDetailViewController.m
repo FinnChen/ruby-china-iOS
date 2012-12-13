@@ -42,7 +42,7 @@
         _webView = [[UIWebView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, self.view.frame.size.height)];
         _webView.delegate = self;
     }
-//    _webView.scrollView.bounces = NO;
+    _webView.scrollView.bounces = NO;
     [self.view addSubview:_webView];
     return _webView;
 }

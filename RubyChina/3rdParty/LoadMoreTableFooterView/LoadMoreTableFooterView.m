@@ -80,10 +80,10 @@
 - (void)setState:(LoadMoreState)aState{	
 	switch (aState) {
 		case LoadMorePulling:
-			_statusLabel.text = NSLocalizedString(@"松开加载更多...", @"Release to load more");
+			_statusLabel.text = NSLocalizedString(@"释放加载更多...", @"Release to load more");
 			break;
 		case LoadMoreNormal:
-			_statusLabel.text = NSLocalizedString(@"上拉可以加载更多...", @"Load More");
+			_statusLabel.text = NSLocalizedString(@"上拉加载更多...", @"Load More");
 			_statusLabel.hidden = NO;
 			[_activityView stopAnimating];
 			break;
