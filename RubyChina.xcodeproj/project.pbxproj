@@ -10,9 +10,10 @@
 		5F1A051B164FA80E007C0FBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F1A051A164FA80E007C0FBB /* Foundation.framework */; };
 		5F1A0523164FA80E007C0FBB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F1A0521164FA80E007C0FBB /* InfoPlist.strings */; };
 		5F1A0525164FA80E007C0FBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F1A0524164FA80E007C0FBB /* main.m */; };
+		5F1DE5A7167A533D00730EA8 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F1DE5A5167A533D00730EA8 /* Model.xcdatamodeld */; };
+		5F1DE5AB167A5DCB00730EA8 /* node_seed.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5F1DE5AA167A5DCB00730EA8 /* node_seed.sqlite */; };
 		5F66265E16554FA100F209D0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F66265D16554FA100F209D0 /* QuartzCore.framework */; };
 		5F78576C165D32AB00F74AF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F78576B165D32AB00F74AF9 /* UIKit.framework */; };
-		5F8EA3F51663BBBF0013426B /* Node.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F8EA3F31663BBBF0013426B /* Node.xcdatamodeld */; };
 		5F9F6FA31678CA640089E972 /* LoadMoreTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F6F8B1678CA640089E972 /* LoadMoreTableFooterView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5F9F6FA41678CA640089E972 /* ICUTemplateMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F6F8F1678CA640089E972 /* ICUTemplateMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		5F9F6FA51678CA640089E972 /* MGTemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F6F911678CA640089E972 /* MGTemplateEngine.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -120,7 +121,6 @@
 		5F9F70FC1678ECD40089E972 /* RCUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F9F70DE1678ECD40089E972 /* RCUserViewController.xib */; };
 		5F9F70FD1678ECD40089E972 /* UIViewController+RubyChina.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E01678ECD40089E972 /* UIViewController+RubyChina.m */; };
 		5F9F70FE1678ECD40089E972 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E31678ECD40089E972 /* Node.m */; };
-		5F9F70FF1678ECD40089E972 /* Node.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E41678ECD40089E972 /* Node.xcdatamodeld */; };
 		5F9F71001678ECD40089E972 /* Reply.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E61678ECD40089E972 /* Reply.m */; };
 		5F9F71011678ECD40089E972 /* Topic.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70E81678ECD40089E972 /* Topic.m */; };
 		5F9F71021678ECD40089E972 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9F70EA1678ECD40089E972 /* User.m */; };
@@ -132,7 +132,8 @@
 		5FCF8C82167A2EAE005504FE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */; };
 		5FCF8C83167A2EAE005504FE /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8C80167A2EAD005504FE /* Default.png */; };
 		5FCF8C84167A2EAE005504FE /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8C81167A2EAD005504FE /* Default@2x.png */; };
-		5FEBEC501676253E00A906A2 /* node_seed.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 5FEBEC4F1676253E00A906A2 /* node_seed.sqlite */; };
+		5FCF8C8A167A37E7005504FE /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8C89167A37E7005504FE /* Icon.png */; };
+		5FCF8C8C167A37FE005504FE /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCF8C8B167A37FE005504FE /* Icon@2x.png */; };
 		6ACB11F251C645B2AA95427F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88D4D26BD238464EAE106F80 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -156,9 +157,10 @@
 		5F1A0522164FA80E007C0FBB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5F1A0524164FA80E007C0FBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5F1A0526164FA80E007C0FBB /* RubyChina-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RubyChina-Prefix.pch"; sourceTree = "<group>"; };
+		5F1DE5A6167A533D00730EA8 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5F1DE5AA167A5DCB00730EA8 /* node_seed.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = node_seed.sqlite; sourceTree = "<group>"; };
 		5F66265D16554FA100F209D0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		5F78576B165D32AB00F74AF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		5F8EA3F41663BBBF0013426B /* Node.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Node.xcdatamodel; sourceTree = "<group>"; };
 		5F9F6F8A1678CA640089E972 /* LoadMoreTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadMoreTableFooterView.h; sourceTree = "<group>"; };
 		5F9F6F8B1678CA640089E972 /* LoadMoreTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadMoreTableFooterView.m; sourceTree = "<group>"; };
 		5F9F6F8D1678CA640089E972 /* DeepMutableCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeepMutableCopy.h; sourceTree = "<group>"; };
@@ -309,7 +311,8 @@
 		5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5FCF8C80167A2EAD005504FE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5FCF8C81167A2EAD005504FE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		5FEBEC4F1676253E00A906A2 /* node_seed.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = node_seed.sqlite; sourceTree = "<group>"; };
+		5FCF8C89167A37E7005504FE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		5FCF8C8B167A37FE005504FE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		88D4D26BD238464EAE106F80 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -333,6 +336,8 @@
 		5F1A0509164FA80E007C0FBB = {
 			isa = PBXGroup;
 			children = (
+				5FCF8C8B167A37FE005504FE /* Icon@2x.png */,
+				5FCF8C89167A37E7005504FE /* Icon.png */,
 				5F1A051E164FA80E007C0FBB /* RubyChina */,
 				5F1A0517164FA80E007C0FBB /* Frameworks */,
 				5F1A0515164FA80E007C0FBB /* Products */,
@@ -369,11 +374,11 @@
 				5F9F6FB41678CA750089E972 /* assets */,
 				5F9F6F881678CA640089E972 /* 3rdParty */,
 				5F1A051F164FA80E007C0FBB /* Supporting Files */,
-				5F8EA3F31663BBBF0013426B /* Node.xcdatamodeld */,
-				5FEBEC4F1676253E00A906A2 /* node_seed.sqlite */,
+				5F1DE5AA167A5DCB00730EA8 /* node_seed.sqlite */,
 				5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */,
 				5FCF8C80167A2EAD005504FE /* Default.png */,
 				5FCF8C81167A2EAD005504FE /* Default@2x.png */,
+				5F1DE5A5167A533D00730EA8 /* Model.xcdatamodeld */,
 			);
 			path = RubyChina;
 			sourceTree = "<group>";
@@ -588,7 +593,6 @@
 			children = (
 				5F9F70E21678ECD40089E972 /* Node.h */,
 				5F9F70E31678ECD40089E972 /* Node.m */,
-				5F9F70E41678ECD40089E972 /* Node.xcdatamodeld */,
 				5F9F70E51678ECD40089E972 /* Reply.h */,
 				5F9F70E61678ECD40089E972 /* Reply.m */,
 				5F9F70E71678ECD40089E972 /* Topic.h */,
@@ -641,7 +645,7 @@
 			attributes = {
 				CLASSPREFIX = RC;
 				LastUpgradeCheck = 0450;
-				ORGANIZATIONNAME = "ÈôàÈîã";
+				ORGANIZATIONNAME = "陈锋";
 			};
 			buildConfigurationList = 5F1A050E164FA80E007C0FBB /* Build configuration list for PBXProject "RubyChina" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -666,7 +670,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F1A0523164FA80E007C0FBB /* InfoPlist.strings in Resources */,
-				5FEBEC501676253E00A906A2 /* node_seed.sqlite in Resources */,
 				5F9F70351678CA750089E972 /* add_page_list_plus_btn.png in Resources */,
 				5F9F70361678CA750089E972 /* add_page_list_plus_btn@2x.png in Resources */,
 				5F9F70371678CA750089E972 /* add_page_list_plus_btn_pressed.png in Resources */,
@@ -757,6 +760,9 @@
 				5FCF8C82167A2EAE005504FE /* Default-568h@2x.png in Resources */,
 				5FCF8C83167A2EAE005504FE /* Default.png in Resources */,
 				5FCF8C84167A2EAE005504FE /* Default@2x.png in Resources */,
+				5FCF8C8A167A37E7005504FE /* Icon.png in Resources */,
+				5FCF8C8C167A37FE005504FE /* Icon@2x.png in Resources */,
+				5F1DE5AB167A5DCB00730EA8 /* node_seed.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -785,7 +791,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F1A0525164FA80E007C0FBB /* main.m in Sources */,
-				5F8EA3F51663BBBF0013426B /* Node.xcdatamodeld in Sources */,
 				5F9F6FA31678CA640089E972 /* LoadMoreTableFooterView.m in Sources */,
 				5F9F6FA41678CA640089E972 /* ICUTemplateMatcher.m in Sources */,
 				5F9F6FA51678CA640089E972 /* MGTemplateEngine.m in Sources */,
@@ -806,13 +811,13 @@
 				5F9F70FB1678ECD40089E972 /* RCUserViewController.m in Sources */,
 				5F9F70FD1678ECD40089E972 /* UIViewController+RubyChina.m in Sources */,
 				5F9F70FE1678ECD40089E972 /* Node.m in Sources */,
-				5F9F70FF1678ECD40089E972 /* Node.xcdatamodeld in Sources */,
 				5F9F71001678ECD40089E972 /* Reply.m in Sources */,
 				5F9F71011678ECD40089E972 /* Topic.m in Sources */,
 				5F9F71021678ECD40089E972 /* User.m in Sources */,
 				5F9F71031678ECD40089E972 /* RCAppDelegate.m in Sources */,
 				5F9F71041678ECD40089E972 /* BButton.m in Sources */,
 				5F9F71051678ECD40089E972 /* RCTopicTableCell.m in Sources */,
+				5F1DE5A7167A533D00730EA8 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -943,21 +948,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5F8EA3F31663BBBF0013426B /* Node.xcdatamodeld */ = {
+		5F1DE5A5167A533D00730EA8 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5F8EA3F41663BBBF0013426B /* Node.xcdatamodel */,
+				5F1DE5A6167A533D00730EA8 /* Model.xcdatamodel */,
 			);
-			currentVersion = 5F8EA3F41663BBBF0013426B /* Node.xcdatamodel */;
-			path = Node.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		5F9F70E41678ECD40089E972 /* Node.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-			);
-			path = Node.xcdatamodeld;
+			currentVersion = 5F1DE5A6167A533D00730EA8 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
