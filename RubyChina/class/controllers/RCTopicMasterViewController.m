@@ -28,6 +28,7 @@
 @property (nonatomic) NSUInteger pageSize;
 @property (nonatomic) BOOL loadmoreLoading;
 @property (nonatomic, strong) UIBarButtonItem *rightBtn;
+@property (nonatomic, strong) UIActivityIndicatorView *indicator;
 
 @end
 
@@ -62,7 +63,12 @@
     
     
     _rightBtn = [UIBarButtonItem barItemWithImage:[UIImage imageNamed:@"text_page_top_bar_refresh_btn.png"] highLightedImage:[UIImage imageNamed:@"top_bar_refresh_btn_pressed.png"] target:self action:@selector(refreshTopics)];
-    self.navigationItem.rightBarButtonItem = _rightBtn;
+    [self.navigationItem setRightBarButtonItem:_rightBtn animated:NO];
+
+    
+    _indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    _indicator.frame = _rightBtn.customView.frame;
+    [self.navigationController.navigationBar addSubview:_indicator];
     
     
     // teble view
@@ -104,7 +110,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    _topics = nil;
 }
 
 - (void)revealLeftSidebar:(id)sender
@@ -157,8 +162,7 @@
         [_loadMoreFooterView loadMoreScrollViewDataSourceDidFinishedLoading:self.tableView];
     }
     
-    self.navigationItem.rightBarButtonItem = nil;
-    self.navigationItem.rightBarButtonItem = _rightBtn;
+    [self afterLoadData];
 
     [self.tableView reloadData];
 }
@@ -182,7 +186,7 @@
 //}
 
 - (void)pullToRefreshViewDidStartLoading:(SSPullToRefreshView *)view {
-    [self refreshOrLoadMoreIndicator];
+    [self beforeLoadData];
     [self loadData];
 }
 
@@ -194,7 +198,7 @@
 - (void)loadMoreTableFooterDidTriggerRefresh:(LoadMoreTableFooterView *)view
 {
     _loadmoreLoading = YES;
-    [self refreshOrLoadMoreIndicator];
+    [self beforeLoadData];
     [self loadDataAtPage:++_currentPage withPageSize:_pageSize];
 }
 
@@ -203,13 +207,16 @@
     return _loadmoreLoading;
 }
 
-- (void)refreshOrLoadMoreIndicator
+- (void)beforeLoadData
 {
-    UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    indicator.frame = _rightBtn.customView.frame;
-    self.navigationItem.rightBarButtonItem = nil;
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:indicator];
-    [indicator startAnimating];
+    _rightBtn.customView.hidden = YES;
+    _indicator.hidden = NO;
+}
+
+- (void)afterLoadData
+{
+    _rightBtn.customView.hidden = NO;
+    _indicator.hidden = YES;
 }
 
 #pragma mark -
