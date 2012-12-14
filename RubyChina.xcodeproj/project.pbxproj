@@ -308,9 +308,9 @@
 		5F9F70F21678ECD40089E972 /* RCTopicTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTopicTableCell.m; sourceTree = "<group>"; };
 		5FCBA3D6165D495300EB8373 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5FCBA3D8165D4A5E00EB8373 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
-		5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5FCF8C80167A2EAD005504FE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		5FCF8C81167A2EAD005504FE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "RubyChina/Default-568h@2x.png"; sourceTree = "<group>"; };
+		5FCF8C80167A2EAD005504FE /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = RubyChina/Default.png; sourceTree = "<group>"; };
+		5FCF8C81167A2EAD005504FE /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "RubyChina/Default@2x.png"; sourceTree = "<group>"; };
 		5FCF8C89167A37E7005504FE /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		5FCF8C8B167A37FE005504FE /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		88D4D26BD238464EAE106F80 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -336,11 +336,14 @@
 		5F1A0509164FA80E007C0FBB = {
 			isa = PBXGroup;
 			children = (
-				5FCF8C8B167A37FE005504FE /* Icon@2x.png */,
-				5FCF8C89167A37E7005504FE /* Icon.png */,
 				5F1A051E164FA80E007C0FBB /* RubyChina */,
 				5F1A0517164FA80E007C0FBB /* Frameworks */,
 				5F1A0515164FA80E007C0FBB /* Products */,
+				5FCF8C8B167A37FE005504FE /* Icon@2x.png */,
+				5FCF8C89167A37E7005504FE /* Icon.png */,
+				5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */,
+				5FCF8C80167A2EAD005504FE /* Default.png */,
+				5FCF8C81167A2EAD005504FE /* Default@2x.png */,
 				141343EA920E4CAFBFA2A61F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
@@ -375,9 +378,6 @@
 				5F9F6F881678CA640089E972 /* 3rdParty */,
 				5F1A051F164FA80E007C0FBB /* Supporting Files */,
 				5F1DE5AA167A5DCB00730EA8 /* node_seed.sqlite */,
-				5FCF8C7F167A2EAD005504FE /* Default-568h@2x.png */,
-				5FCF8C80167A2EAD005504FE /* Default.png */,
-				5FCF8C81167A2EAD005504FE /* Default@2x.png */,
 				5F1DE5A5167A533D00730EA8 /* Model.xcdatamodeld */,
 			);
 			path = RubyChina;
@@ -844,6 +844,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -859,7 +860,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos6.0;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -872,6 +873,7 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -881,7 +883,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				SDKROOT = iphoneos6.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -900,7 +903,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.0;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -919,7 +922,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos6.0;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
