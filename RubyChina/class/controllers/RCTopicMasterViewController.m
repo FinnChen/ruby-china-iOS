@@ -170,6 +170,7 @@
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
 {
     [self.pullToRefreshView finishLoading];
+    [self afterLoadData];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ERROR!" message:@"加载错误，请重试..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil];
     [alert show];
 }
