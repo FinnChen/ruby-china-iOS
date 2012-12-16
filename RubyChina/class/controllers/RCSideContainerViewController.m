@@ -347,11 +347,6 @@
             return NO;
     }
     
-    // add coverView to stop scroll when sidebar show
-    if ([[_rightContentView subviews] containsObject:_coverView] == NO) {
-        [_rightContentView addSubview:_coverView];
-    }
-    
     return YES;
 }
 
