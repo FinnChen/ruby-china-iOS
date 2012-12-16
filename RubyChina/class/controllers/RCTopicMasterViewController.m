@@ -211,12 +211,14 @@
 {
     _rightBtn.customView.hidden = YES;
     _indicator.hidden = NO;
+    [_indicator startAnimating];
 }
 
 - (void)afterLoadData
 {
     _rightBtn.customView.hidden = NO;
     _indicator.hidden = YES;
+    [_indicator stopAnimating];
 }
 
 #pragma mark -
