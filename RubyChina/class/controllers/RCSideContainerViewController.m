@@ -6,11 +6,10 @@
 //  Copyright (c) 2012年 ÈôàÈîã. All rights reserved.
 //
 
+#import <QuartzCore/CALayer.h>
 #import <RestKit.h>
 #import "BButton.h"
-
 #import "RCSideContainerViewController.h"
-
 #import "Node.h"
 #import "RCNodesDelegate.h"
 #import "RCTopicMasterViewController.h"
@@ -137,6 +136,8 @@
     
     _rightContentView = [[UIView alloc] initWithFrame:(CGRect){(CGPoint){RC_LEFT_SIDE_WIDTH, 0.0f}, rect.size}];
     _rightContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    _rightContentView.layer.shadowOffset = CGSizeMake(-5.0f, 0);
+    _rightContentView.layer.shadowOpacity = 0.2;
     _rightContentView.userInteractionEnabled = YES;
     _rightContentView.multipleTouchEnabled = YES;
     
