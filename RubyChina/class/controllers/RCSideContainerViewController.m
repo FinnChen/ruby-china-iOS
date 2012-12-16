@@ -233,6 +233,7 @@
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0.0f, 88.0f, RC_LEFT_SIDE_WIDTH, size.height - 88.0f)];
     _tableView.backgroundColor = [UIColor clearColor];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _tableView.scrollsToTop = NO;
     _tableView.delegate = self;
     _tableView.dataSource = self;
     [_leftSideView addSubview:_tableView];
