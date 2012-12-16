@@ -12,7 +12,7 @@
 #import "UIBarButtonItem+RubyChina.h"
 #import "UIViewController+RubyChina.h"
 
-@interface RCNewTopicViewController () <UIPickerViewDataSource, UIPickerViewDelegate>
+@interface RCNewTopicViewController () <UIPickerViewDataSource, UIPickerViewDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic) NSNumber *selectedNodeID;
 
@@ -65,6 +65,7 @@
     
     UIGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnView:)];
     [self.view addGestureRecognizer:tap];
+    tap.delegate = self;
     
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name: UIKeyboardWillShowNotification object:nil];
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name: UIKeyboardWillHideNotification object:nil];
@@ -121,6 +122,10 @@
 
 - (IBAction)nodeButtonPressed:(id)sender
 {
+    if (_nodePickerView.hidden == NO) {
+        return;
+    }
+    
     [_titleTextField resignFirstResponder];
     [_bodyTextView resignFirstResponder];
     
@@ -153,6 +158,16 @@
     }];
 }
 
+#pragma mark - UIGestureRecognizer methods
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
+    if (touch.view != self.view) {
+        return NO;
+    }
+    
+    return YES;
+}
 #pragma mark - UIPickerViewDataSource methods
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
 {
