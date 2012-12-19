@@ -137,7 +137,9 @@
     _rightContentView = [[UIView alloc] initWithFrame:(CGRect){(CGPoint){RC_LEFT_SIDE_WIDTH, 0.0f}, rect.size}];
     _rightContentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
     _rightContentView.layer.shadowOffset = CGSizeMake(-5.0f, 0);
-    _rightContentView.layer.shadowOpacity = 0.2;
+    _rightContentView.layer.shadowOpacity = 0.5;
+    [_rightContentView.layer setShadowPath:[[UIBezierPath
+                                  bezierPathWithRect:_rightContentView.bounds] CGPath]];
     _rightContentView.userInteractionEnabled = YES;
     _rightContentView.multipleTouchEnabled = YES;
     
@@ -225,7 +227,7 @@
     
     BButton *btn = [[BButton alloc] initWithFrame:CGRectMake(10.0, 5.0 + navBar.bounds.size.height, 250.0, 33.0)];
     [btn setTitle:@"发布新帖" forState:UIControlStateNormal]; // Set the button title
-    btn.titleLabel.font = [UIFont boldSystemFontOfSize:18.0f];
+    btn.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:18.0f];
     [btn addTarget:self action:@selector(newTopicBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     btn.color = [UIColor colorWithRed:91.0f/255.0f green:183.0f/255.0f blue:91.0f/255.0f alpha:1.00f];
     
@@ -485,7 +487,7 @@
     }
     
     cell.textLabel.textColor = [UIColor lightTextColor];
-    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:15.0f];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
     
     return cell;
 }
