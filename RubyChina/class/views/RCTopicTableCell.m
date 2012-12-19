@@ -12,9 +12,9 @@
 #import "NSDate+Timeago.h"
 
 #define kTextLabelFontSize       14.0f
-#define kDetailTextLabelFontSize 14.0f
-#define kTimestampLabelFontSize  12.0f
-#define KNodeLabelFontSize       11.5f
+#define kDetailTextLabelFontSize 16.0f
+#define kTimestampLabelFontSize  14.0f
+#define KNodeLabelFontSize       13.0f
 
 @interface RCTopicTableCell ()
 
@@ -75,9 +75,9 @@
 - (void)customUI
 {
 
-    self.textLabel.font = [UIFont boldSystemFontOfSize:kTextLabelFontSize];
+    self.textLabel.font = [UIFont fontWithName:@"Helvetica" size:kTextLabelFontSize];
     
-    self.detailTextLabel.font = [UIFont systemFontOfSize:kDetailTextLabelFontSize];
+    self.detailTextLabel.font = [UIFont fontWithName:@"Helvetica" size:kDetailTextLabelFontSize];
     self.detailTextLabel.textColor = [UIColor darkTextColor];
     self.detailTextLabel.numberOfLines = 0;
     self.detailTextLabel.lineBreakMode = NSLineBreakByCharWrapping;
@@ -89,20 +89,20 @@
     accessory.frame = frame;
     accessory.backgroundColor = [UIColor lightGrayColor];
     accessory.layer.cornerRadius = 8.0f;
-    accessory.titleLabel.font = [UIFont systemFontOfSize:12.0f];
+    accessory.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:12.0f];
     accessory.selected = YES;
     self.accessoryView = accessory;
     self.accessoryView.hidden = YES;
     
     _timestampLabel = [[UILabel alloc] init];
-    _timestampLabel.font = [UIFont systemFontOfSize:kTimestampLabelFontSize];
+    _timestampLabel.font = [UIFont fontWithName:@"Helvetica" size:kTimestampLabelFontSize];
     _timestampLabel.textColor = [UIColor blueColor];
     _timestampLabel.textAlignment = NSTextAlignmentRight;
     [self.contentView addSubview:_timestampLabel];
     
     _nodeLabel = [[UILabel alloc] initWithFrame:CGRectZero];
-//    _nodeLabel.backgroundColor = [UIColor lightGrayColor];
-    _nodeLabel.font = [UIFont systemFontOfSize:KNodeLabelFontSize];
+    _nodeLabel.lineBreakMode = UILineBreakModeWordWrap;
+    _nodeLabel.font = [UIFont fontWithName:@"Helvetica" size:KNodeLabelFontSize];
     _nodeLabel.textColor = [UIColor grayColor];
     [self.contentView addSubview:_nodeLabel];
     
@@ -138,9 +138,9 @@
 
 + (CGFloat)heightForCellWithTopic:(Topic *)topic
 {
-    CGSize textLabelSize = [topic.user.login sizeWithFont:[UIFont systemFontOfSize:kTextLabelFontSize]];
-    CGSize detailLabelSize = [topic.title sizeWithFont:[UIFont systemFontOfSize:kDetailTextLabelFontSize] constrainedToSize:CGSizeMake(200.0f, CGFLOAT_MAX) lineBreakMode:NSLineBreakByCharWrapping];
-    CGSize nodeLabelSize = [topic.nodeName sizeWithFont:[UIFont systemFontOfSize:KNodeLabelFontSize]];
+    CGSize textLabelSize = [topic.user.login sizeWithFont:[UIFont fontWithName:@"Helvetica" size:kTextLabelFontSize]];
+    CGSize detailLabelSize = [topic.title sizeWithFont:[UIFont fontWithName:@"Helvetica" size:kDetailTextLabelFontSize] constrainedToSize:CGSizeMake(200.0f, CGFLOAT_MAX) lineBreakMode:NSLineBreakByCharWrapping];
+    CGSize nodeLabelSize = [topic.nodeName sizeWithFont:[UIFont fontWithName:@"Helvetica" size:KNodeLabelFontSize]];
     return fmaxf(70.0f, textLabelSize.height + detailLabelSize.height + nodeLabelSize.height + 40.0f);
 }
 

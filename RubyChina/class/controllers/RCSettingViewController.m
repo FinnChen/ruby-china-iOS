@@ -35,7 +35,7 @@
     self.title = @"设置";
     UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [doneButton setTitle:@"完成"forState:UIControlStateNormal] ;
-    doneButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
+    doneButton.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
     [doneButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
     [doneButton setBackgroundImage:[UIImage imageNamed:@"search_page_cancel_btn.png"] forState:UIControlStateNormal];
     [doneButton setBackgroundImage:[UIImage imageNamed:@"search_page_cancel_btn_pressed.png"] forState:UIControlStateHighlighted];
@@ -110,7 +110,7 @@
             textField.tag = kUsernameTextFieldTag;
         }
         
-        textField.font = [UIFont systemFontOfSize:16.0f];
+        textField.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
         textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
         textField.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
         textField.clearButtonMode = UITextFieldViewModeWhileEditing;

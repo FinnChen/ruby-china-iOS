@@ -4,7 +4,7 @@ html {
   background: #eeeeee url('bg.png') bottom left repeat; }
 body{
  word-wrap:break-word;
- font-size: 14px;
+ font-size: 16px;
  padding-bottom: 1px;
 }
 
@@ -16,7 +16,7 @@ img{max-width:100%;}
   position: relative; }
 
 #main h1 {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 26px;
   font-weight: bold;
   text-align: right;
@@ -24,7 +24,7 @@ img{max-width:100%;}
   margin-bottom: 10px; }
 
 #topic_show h1 {
-  font-size: 16px;
+  font-size: 18px;
   color: #333;
   text-align: left;
   line-height: 125%;
@@ -47,7 +47,7 @@ img{max-width:100%;}
 .topics .topic .right_info {
   padding-left: 66px; }
 .topics .topic .title {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 2px;
   margin-bottom: 6px; }
 .topics .topic .info {
@@ -114,12 +114,12 @@ img{max-width:100%;}
 .topics tr.topic td.replies {
   text-align: right;
   width: 50px;
-  font-size: 14px;
+  font-size: 16px;
   color: green;
   font-weight: bold; }
 
 .topics h2 {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 8px; }
 
 .topics ul li {
@@ -256,9 +256,9 @@ img{max-width:100%;}
   #replies .reply .infos {
     padding-left: 58px; }
   #replies .reply .info {
-    font-size: 14px;
+    font-size: 16px;
     color: #bbb;
-    height: 14px; }
+    height: 16px; }
     #replies .reply .info a:link,
     #replies .reply .info a:visited {
       color: #999; }
@@ -282,7 +282,7 @@ img{max-width:100%;}
       vertical-align: middle; }
   #replies .reply .body img {
     max-width: 100%; }
-#replies .reply .body { font-size: 14px;}
+#replies .reply .body { font-size: 16px;}
 .icon {
 display: inline-block;
 transition-property: background-position;

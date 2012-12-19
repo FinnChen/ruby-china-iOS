@@ -161,7 +161,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        cell.textLabel.font = [UIFont systemFontOfSize:14.0f];
+        cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
     }
     
     switch (_segmentedTab.selectedSegmentIndex) {
@@ -181,13 +181,6 @@
     
     return cell;
 }
-
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    NSString *text =  [[[tableView cellForRowAtIndexPath:indexPath] textLabel] text];
-//    CGSize size = [text sizeWithFont:[UIFont systemFontOfSize:14.0]];
-//    return fmaxf(size.height, 50.0f);
-//}
 
 - (NSString *)userInfoAtIndexPath:(NSIndexPath *)indexPath
 {

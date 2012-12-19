@@ -55,7 +55,7 @@
     self.title = @"添加节点";
     UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [doneButton setTitle:@"完成"forState:UIControlStateNormal] ;
-    doneButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
+    doneButton.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
     [doneButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
     [doneButton setBackgroundImage:[UIImage imageNamed:@"search_page_cancel_btn.png"] forState:UIControlStateNormal];
     [doneButton setBackgroundImage:[UIImage imageNamed:@"search_page_cancel_btn_pressed.png"] forState:UIControlStateHighlighted];
@@ -158,7 +158,7 @@
     }
     Node *node = [self.nodes objectAtIndex:indexPath.row];
     cell.textLabel.text = [node nodeName];
-    cell.textLabel.font = [UIFont systemFontOfSize:18.0f];
+    cell.textLabel.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
     
     UIView *av = [self customeCellAccessoryView:indexPath];
     

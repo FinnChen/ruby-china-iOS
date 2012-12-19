@@ -23,7 +23,7 @@
 {
     if (!_textView) {
         _textView = [[UITextView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 200.0f)];
-        _textView.font = [UIFont systemFontOfSize:16.0f];
+        _textView.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
     }
     return _textView;
 }
@@ -43,7 +43,7 @@
     self.title = @"评论";
     UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [doneButton setTitle:@"发布"forState:UIControlStateNormal] ;
-    doneButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
+    doneButton.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
     [doneButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
     [doneButton setBackgroundImage:[UIImage imageNamed:@"search_page_cancel_btn.png"] forState:UIControlStateNormal];
     [doneButton setBackgroundImage:[UIImage imageNamed:@"search_page_cancel_btn_pressed.png"] forState:UIControlStateHighlighted];

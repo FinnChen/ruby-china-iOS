@@ -51,7 +51,7 @@
     
     UIButton *doneButton = [UIButton buttonWithType:UIButtonTypeCustom];
     [doneButton setTitle:@"发布"forState:UIControlStateNormal] ;
-    doneButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
+    doneButton.titleLabel.font = [UIFont fontWithName:@"Helvetica" size:16.0f];
     [doneButton setTitleColor:[UIColor darkTextColor] forState:UIControlStateNormal];
     [doneButton setBackgroundImage:[UIImage imageNamed:@"search_page_cancel_btn.png"] forState:UIControlStateNormal];
     [doneButton setBackgroundImage:[UIImage imageNamed:@"search_page_cancel_btn_pressed.png"] forState:UIControlStateHighlighted];

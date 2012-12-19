@@ -16,7 +16,6 @@
     if (!titleView) {
         titleView = [[UILabel alloc] initWithFrame:CGRectZero];
         titleView.backgroundColor = [UIColor clearColor];
-        //        titleView.font = [UIFont boldSystemFontOfSize:20.0];
         titleView.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
         
         titleView.textColor = [UIColor darkTextColor]; // Change to desired color
