@@ -43,10 +43,7 @@
     // Do any additional setup after loading the view from its nib.
     self.navigationItem.rightBarButtonItem = nil;
     self.title = @"我的主页";
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
+    
     if (_userLogin == nil) {
         NSString *username = [[NSUserDefaults standardUserDefaults] objectForKey:@"username"];
         self.navigationItem.leftBarButtonItem = [UIBarButtonItem barItemWithImage:[UIImage imageNamed:@"top_bar_navigation_btn.png"] highLightedImage:[UIImage imageNamed:@"top_bar_navigation_btn_pressed.png"] target:self action:@selector(revealLeftSidebar:)];
@@ -56,6 +53,11 @@
         self.navigationItem.leftBarButtonItem = [UIBarButtonItem barItemWithImage:[UIImage imageNamed:@"top_bar_back_btn.png"] highLightedImage:[UIImage imageNamed:@"top_bar_back_btn_pressed.png"] target:self action:@selector(backbuttonPressed)];
         [self loadUserInfoWithUserName:_userLogin];
     }
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+
 }
 
 - (void)didReceiveMemoryWarning
