@@ -289,8 +289,8 @@
 		5F9F70DC1678ECD40089E972 /* RCUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCUserViewController.h; sourceTree = "<group>"; };
 		5F9F70DD1678ECD40089E972 /* RCUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCUserViewController.m; sourceTree = "<group>"; };
 		5F9F70DE1678ECD40089E972 /* RCUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RCUserViewController.xib; sourceTree = "<group>"; };
-		5F9F70DF1678ECD40089E972 /* UIViewController+RubyChina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RubyChina.h"; sourceTree = "<group>"; };
-		5F9F70E01678ECD40089E972 /* UIViewController+RubyChina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RubyChina.m"; sourceTree = "<group>"; };
+		5F9F70DF1678ECD40089E972 /* UIViewController+RubyChina.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RubyChina.h"; path = "../class/controllers/UIViewController+RubyChina.h"; sourceTree = "<group>"; };
+		5F9F70E01678ECD40089E972 /* UIViewController+RubyChina.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RubyChina.m"; path = "../class/controllers/UIViewController+RubyChina.m"; sourceTree = "<group>"; };
 		5F9F70E21678ECD40089E972 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		5F9F70E31678ECD40089E972 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
 		5F9F70E51678ECD40089E972 /* Reply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reply.h; sourceTree = "<group>"; };
@@ -441,6 +441,8 @@
 		5F9F6FAF1678CA750089E972 /* additions */ = {
 			isa = PBXGroup;
 			children = (
+				5F9F70DF1678ECD40089E972 /* UIViewController+RubyChina.h */,
+				5F9F70E01678ECD40089E972 /* UIViewController+RubyChina.m */,
 				5F9F6FB01678CA750089E972 /* NSDate+Timeago.h */,
 				5F9F6FB11678CA750089E972 /* NSDate+Timeago.m */,
 				5F9F6FB21678CA750089E972 /* UIBarButtonItem+RubyChina.h */,
@@ -582,8 +584,6 @@
 				5F9F70DC1678ECD40089E972 /* RCUserViewController.h */,
 				5F9F70DD1678ECD40089E972 /* RCUserViewController.m */,
 				5F9F70DE1678ECD40089E972 /* RCUserViewController.xib */,
-				5F9F70DF1678ECD40089E972 /* UIViewController+RubyChina.h */,
-				5F9F70E01678ECD40089E972 /* UIViewController+RubyChina.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
