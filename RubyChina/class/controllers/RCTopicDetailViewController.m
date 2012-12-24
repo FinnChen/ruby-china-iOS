@@ -13,6 +13,7 @@
 #import "Reply.h"
 #import "MGTemplateEngine.h"
 #import "ICUTemplateMatcher.h"
+#import <MBProgressHUD.h>
 #import "RCReplyViewController.h"
 #import "RCUserViewController.h"
 
@@ -64,6 +65,8 @@
     [replyButton addTarget:self action:@selector(replyButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:replyButton];
     
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    
     RKObjectManager *objectManager = [RKObjectManager sharedManager];
     [objectManager loadObjectsAtResourcePath:[NSString stringWithFormat:@"/topics/%@.json", _topic.topicID] delegate:self];
 }
@@ -113,11 +116,16 @@
     _topic = nil;
     _topic = object;
     [self loadHTML];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
 {
     NSLog(@"error: %@", error);
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
+    
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"ERROR!" message:@"加载错误，请稍后再试..." delegate:nil cancelButtonTitle:@"确定" otherButtonTitles: nil];
+    [alert show];
 }
 
 #pragma mark - UIWebView Delegate mehtods
