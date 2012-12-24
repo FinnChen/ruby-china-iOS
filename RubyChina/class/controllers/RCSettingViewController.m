@@ -143,14 +143,14 @@
 
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
-        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-        if (textField.tag == kTokenTextFiledTag) {
-            [defaults setObject:textField.text forKey:@"token"];
-        }
-        if (textField.tag == kUsernameTextFieldTag) {
-            [defaults setObject:textField.text forKey:@"username"];
-        }
-        [defaults synchronize];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if (textField.tag == kTokenTextFiledTag) {
+        [defaults setObject:textField.text forKey:@"token"];
+    }
+    if (textField.tag == kUsernameTextFieldTag) {
+        [defaults setObject:textField.text forKey:@"username"];
+    }
+    [defaults synchronize];
 }
 
 @end
