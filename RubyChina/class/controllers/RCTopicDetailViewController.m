@@ -17,8 +17,9 @@
 #import "RCReplyViewController.h"
 #import "RCUserViewController.h"
 
-#define RC_USER_SCHEME @"rcuser://"
-#define RC_REPLY       @"rcreply://"
+#define RC_USER_SCHEME    @"rcuser://"
+#define RC_REPLY          @"rcreply://"
+#define TOPIC_DETAIL_PATH @"/topics/%@.json"
 
 @interface RCTopicDetailViewController () <RKObjectLoaderDelegate, RCReplyDelegate, UIScrollViewDelegate, UIWebViewDelegate>
 
@@ -64,17 +65,19 @@
     replyButton.frame = (CGRect){CGPointZero, [[UIImage imageNamed:@"search_page_cancel_btn.png"] size]};
     [replyButton addTarget:self action:@selector(replyButtonPressed) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:replyButton];
+    self.navigationItem.rightBarButtonItem.enabled = NO;
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
     RKObjectManager *objectManager = [RKObjectManager sharedManager];
-    [objectManager loadObjectsAtResourcePath:[NSString stringWithFormat:@"/topics/%@.json", _topic.topicID] delegate:self];
+    [objectManager loadObjectsAtResourcePath:[NSString stringWithFormat:TOPIC_DETAIL_PATH, _topic.topicID] delegate:self];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-//    [[[RKObjectManager sharedManager] requestQueue] cancelAllRequests];
+    [[RKClient sharedClient].requestQueue cancelRequestsWithDelegate:self];
     [_webView stopLoading];
+    [MBProgressHUD hideHUDForView:self.view animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -117,6 +120,7 @@
     _topic = object;
     [self loadHTML];
     [MBProgressHUD hideHUDForView:self.view animated:YES];
+    self.navigationItem.rightBarButtonItem.enabled = YES;
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
