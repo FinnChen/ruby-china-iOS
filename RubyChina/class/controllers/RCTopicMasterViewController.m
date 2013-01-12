@@ -103,7 +103,8 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-//    [[[RKObjectManager sharedManager] requestQueue] cancelAllRequests];
+    [[RKClient sharedClient].requestQueue cancelRequestsWithDelegate:self];
+    [self afterLoadData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -217,6 +218,7 @@
 
 - (void)afterLoadData
 {
+    [self.pullToRefreshView finishLoading];
     _rightBtn.customView.hidden = NO;
     _indicator.hidden = YES;
     [_indicator stopAnimating];
